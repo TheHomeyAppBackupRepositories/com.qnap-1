@@ -1,0 +1,29 @@
+{
+    "settings": {
+        "diagnosticsLog": "Diagnose-Log",
+        "logEnabled": "Log aktiviert",
+        "clearLog": "Log löschen"
+    },
+    "pair": {
+        "title_nas_data": "LAN-Verbindung zum NAS",
+        "subtitle_nas_data": "Gib die IP-Addresse und den Port an, um Homey mit deinem NAS zu verbinden. Benutze den SSL-Port deines QTS-Zugangs",
+        "subtitle_user_data": "Gib im nächsten Schritt deinen NAS-Benutzer an. Es wird empfohlen, einen neuen Benutzer anzulegen, mit Admin-Gruppen-Zuordnung ohne weitere Rechte (Apps, Freigaben) und ohne 2FA (Zweifaktor-Authentifizierung).",
+        "label_nas_ip": "IP-Addresse oder Hostname",
+        "label_nas_port": "Port (SSL)",
+        "label_state": "Verbindungs-Status",
+        "state_connected": "IP und Port sind gültig",
+        "state_error": "IP und Port sind ungültig",
+        "title_loading_error": "Fehler beim NAS-Zugriff.",
+        "subtitle_loading_error_1": "Die App konnte keine NAS-Systemdaten abrufen.",
+        "subtitle_loading_error_2": "Bitte prüfe die Benutzereinstellungen.",
+        "subtitle_loading_error_3": "Es wird empfohlen, einen neuen NAS-Benutzer für Homey anzulegen mit folgenden Einstellungen:",
+        "subtitle_loading_error_4": "Admin-Gruppenzuordnung",
+        "subtitle_loading_error_5": "Keine weiteren Rechte (Apps, Freigaben)",
+        "subtitle_loading_error_6": "Kein 2FA (Zweifaktor-Authentifizierung)"
+    },
+    "device_unavailable_reason": {
+        "auth_error": "Authentifizierungsfehler oder fehlende Benutzerrechte.",
+        "login_error": "Login Fehler",
+        "connection_error": "Verbindungsfehler. Gerät offline oder IP-/Porteinstellungen sind falsch"
+    }
+}

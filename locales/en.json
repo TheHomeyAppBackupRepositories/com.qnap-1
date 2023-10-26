@@ -1,0 +1,29 @@
+{
+    "settings": {
+        "diagnosticsLog": "Diagnostics log",
+        "logEnabled": "Log enabled",
+        "clearLog": "Clear log"
+    },
+    "pair": {
+        "title_nas_data": "LAN connection to NAS",
+        "subtitle_nas_data": "Set the IP address and port to connect to your NAS. Use the SSL-Port of your QTS access",
+        "subtitle_user_data": "In the next step, enter your NAS user. It is recommended to create a new user with admin group assignment without additional rights (apps, shares) and without 2FA (two-factor authentication).",
+        "label_nas_ip": "IP address or hostname",
+        "label_nas_port": "Port (SSL)",
+        "label_state": "Connection state",
+        "state_connected": "IP and port valid",
+        "state_error": "IP and port not valid",
+        "title_loading_error": "NAS access error.",
+        "subtitle_loading_error_1": "The app could not retrieve NAS system data.",
+        "subtitle_loading_error_2": "Please check the user settings.",
+        "subtitle_loading_error_3": "It is recommended to create a new NAS user for Homey with the following settings:",
+        "subtitle_loading_error_4": "Admin Group Mapping",
+        "subtitle_loading_error_5": "No further rights (apps, shares)",
+        "subtitle_loading_error_6": "No 2FA (Two Factor Authentication)"
+    },
+    "device_unavailable_reason": {
+        "auth_error": "Authentication error or missing user rights.",
+        "login_error": "Login error",
+        "connection_error": "Connection error. Device offline or IP/port settings are wrong"
+    }
+}

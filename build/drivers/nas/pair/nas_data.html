@@ -1,0 +1,52 @@
+
+<div id="nas_data" class="tabcontent">
+    <p data-i18n="pair.subtitle_nas_data"></p>
+        <fieldset>
+            <div class="field row">
+                <label for="ip"><span data-i18n="pair.label_nas_ip"></span></label>
+                <input id="ip" type="text" value="" oninput="nasIPChanged(this.value)"/>
+            </div>
+            <div class="field row">
+                <label for="port"><span data-i18n="pair.label_nas_port"></span></label>
+                <input id="port" type="text" value="" oninput="nasPortChanged(this.value)"/>
+            </div>
+            <div class="field row">
+                <label for="state"><span data-i18n="pair.label_state"></span></label>
+                <input id="state" type="text" value="Enter IP and Port..." disabled="true"/>
+            </div>
+        </fieldset>
+    <p data-i18n="pair.subtitle_user_data"></p>
+</div>
+
+<script type="application/javascript">
+
+    Homey.setTitle(Homey.__("pair.title_nas_data"));
+    
+    Homey.emit("getNasData").then(function (data) {
+                document.getElementById('ip').value = data.ip; 
+                document.getElementById('port').value = data.port; 
+            });
+
+            
+    function nasIPChanged(value){
+        Homey.emit("nasIPChanged", value).then(function (result) {
+            printResult(result);
+        });
+    }
+    function nasPortChanged(value){
+        Homey.emit("nasPortChanged", value).then(function (result) {
+            printResult(result);
+        });
+    }
+
+    function printResult(result){
+        if (result){
+            document.getElementById('state').value = __('pair.state_connected');
+            document.getElementById('state').style.color = 'green';
+        }
+        else{
+            document.getElementById('state').value = __('pair.state_error');
+            document.getElementById('state').style.color = 'red';
+        }
+    }
+</script>
